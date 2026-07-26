@@ -1,0 +1,22 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Dependency / build output (uncomment per stack)
+# node_modules/
+# dist/
+# build/
+# __pycache__/
+# .venv/
+# target/

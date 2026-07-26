@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Cancel in-progress runs for the same ref when a new commit is pushed.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+# Least-privilege default; grant more per-job only when needed.
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Lint & test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # --- Replace the steps below with your project's real toolchain. ---
+      #
+      # Example (Node.js):
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20
+      #     cache: npm
+      # - run: npm ci
+      # - run: npm run lint
+      # - run: npm test
+      #
+      # Example (Python):
+      # - uses: actions/setup-python@v5
+      #   with:
+      #     python-version: "3.12"
+      # - run: pip install -e ".[dev]"
+      # - run: ruff check .
+      # - run: pytest
+
+      - name: Placeholder
+        run: echo "Configure real lint/test steps in .github/workflows/ci.yml"
