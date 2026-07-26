@@ -13,6 +13,10 @@ Thumbs.db
 # Logs
 *.log
 
+# Nix build output
+result
+result-*
+
 # Dependency / build output (uncomment per stack)
 # node_modules/
 # dist/
