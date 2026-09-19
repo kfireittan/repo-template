@@ -1,4 +1,5 @@
-# AGENTS.md
+# Kfir's agent instructions
+## repo-template Claude instructions
 
 Guidance for AI coding agents (Claude Code, Codex, Cursor, etc.) working in this repository.
 Human contributors: see `CONTRIBUTING.md`.
